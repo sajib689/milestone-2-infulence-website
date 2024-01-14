@@ -162,6 +162,12 @@ nav ul li a{
 
 @media screen and (max-width: 576px) {
     /* nav css start from here */
+    .mobile-icon{
+        display: block;
+    }
+    .bars{
+        display: block;
+    }
     header{
         margin: 25px 18px 0px 18px;
     }
@@ -201,7 +207,7 @@ nav ul li a{
     }
     /* banner css end from here and also start brand css */
     .brand-container{
-        margin: 100px 20px 100px 20px;
+        margin: 100px 30px 100px 30px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
