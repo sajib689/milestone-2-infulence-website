@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+header{
+    margin: 25px 120px 0px 120px;
+}
+.nav-container h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 34px;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 16px;
+}
+.mobile-icon{
+    display: none;
+}
+.bars{
+    display: none;
+}
+/* nav css end from here and also start the banner css code */
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+.banner-content p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+.banner-content button {
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    padding: 12px 20px;
+    margin-top: 20px;
+}
+.banner-container img {
+    width: 100%;
+}
+/* banner css end from here and also start brand icon section*/
+.brand-container{
+    margin: 100px 226px 100px 226px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+/* brand css end */
+.popular-collection-main-container{
+    margin: 0px 210px 100px 210px;
+}
+.popular-collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.popular-collection-main-container h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 60px;
+}
+.popular-collection-card img{
+    width: 100%;
+}
+.popular-collection-card h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+.popular-collection-card p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #18191F rgba(0, 0, 0, 0.87);
+}
+.popular-collection-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fb8200;
+}
+.popular-collection-icon p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5e6366;
+}
+.popular-collection-description{
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+    letter-spacing: 0.252px;
+}
+
+/* mobile friendly css start from here */
+
+@media screen and (max-width: 576px) {
+    /* nav css start from here */
+    header{
+        margin: 25px 18px 0px 18px;
+    }
+    .nav-container {
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .mobile-icon a{
+        text-decoration: none;
+        color: #3a3a3a;
+    }
+    .mobile-icon li {
+        list-style-type: none
+    }
+    /* nav css end from here */
+    /* banner css start from here */
+    .banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 73px;
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-container img {
+        width: 202px;
+        height: 190px;
+        margin: 0 auto;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+    /* banner css end from here and also start brand css */
+    .brand-container{
+        margin: 100px 20px 100px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    /* brand css end from here and also start the popular collection css */
+    .popular-collection-main-container{
+        margin: 0px 20px 100px 20px;
+    }
+    .popular-collection-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
